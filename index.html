@@ -13,20 +13,21 @@
 <body>
     <div class="weather-app">
     <header>
-        <form action="">
-          <input type="search" placeholder="Enter City" required/>
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input type="search" placeholder="Enter City" required class="search-form-input"/>
+          <input type="submit" value="Search"  class="search-form-button"/>
         </form> </header>
     <main>
 
     </main>
+    <div class="weather-app-data">
     <div>
-    <h1>Paris</h1>
-    <p>Sunday 15:27, clear sky <br/>
-Humidity: 47%, Wind: 4.12km/h</p>
+    <h1 class="weather-app-city">Paris</h1>
+    <p class="weather-app-detail">Sunday 15:27, clear sky <br/>
+Humidity: <strong> 47%></strong>, Wind: <strong>4.12km/h</strong></p>
 </div>
-<div>
-☀️ 12°C
+<div  class="weathe-app-temperature-container">
+<div class="weather-app-icon">🌤</div> <div class="weather-app-temperature">12</div ><div class="weather-app-unit">°C</div></div>
 </div>
 
  <Footer>This project was coded by <a href="https://github.com/DNyl01" target="_blank">Dara Lucunga</a> atracked on <a href="https://github.com/DNyl01/meteo" target="_blank"> Github </a> an hosted on <a href="https://meteoappdara.netlify.app/" target="_blank"> Netfly </a> </Footer>   
