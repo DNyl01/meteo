@@ -13,8 +13,8 @@
 <body>
     <div class="weather-app">
     <header>
-        <form class="search-form">
-          <input type="search" placeholder="Enter City" required class="search-form-input"/>
+        <form class="search-form" id="search-form">
+          <input type="search" placeholder="Enter City" required class="search-form-input" id="search-form-input"/>
           <input type="submit" value="Search"  class="search-form-button"/>
         </form> </header>
     <main>
@@ -22,7 +22,7 @@
     </main>
     <div class="weather-app-data">
     <div>
-    <h1 class="weather-app-city">Paris</h1>
+    <h1 class="weather-app-city" id="city">Paris</h1>
     <p class="weather-app-detail">Sunday 15:27, clear sky <br/>
 Humidity: <strong> 47%></strong>, Wind: <strong>4.12km/h</strong></p>
 </div>
@@ -32,5 +32,6 @@ Humidity: <strong> 47%></strong>, Wind: <strong>4.12km/h</strong></p>
 
  <Footer>This project was coded by <a href="https://github.com/DNyl01" target="_blank">Dara Lucunga</a> atracked on <a href="https://github.com/DNyl01/meteo" target="_blank"> Github </a> an hosted on <a href="https://meteoappdara.netlify.app/" target="_blank"> Netfly </a> </Footer>   
 </div>
+<script src="index.js"></script>
 </body>
 </html>
