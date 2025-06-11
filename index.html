@@ -1,38 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-      <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    <title>Meteo App</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <title>Meteo App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
 </head>
 
 <body>
-    <div class="weather-app">
+  <div class="weather-app">
     <header>
-        <form class="search-form" id="search-form">
-          <input type="search" placeholder="Enter City" required class="search-form-input" id="search-form-input"/>
-          <input type="submit" value="Search"  class="search-form-button"/>
-        </form> </header>
+      <form class="search-form" id="search-form">
+        <input type="search" placeholder="Enter City" required class="search-form-input" id="search-form-input"/>
+        <input type="submit" value="Search" class="search-form-button"/>
+      </form>
+    </header>
+
     <main>
+      <div class="weather-app-data">
+        <div>
+          <h1 class="weather-app-city" id="city"></h1>
+          <p class="weather-app-detail">
+            <span id="time"></span>,
+            <span id="description">light rain</span><br>
+            Humidity: <strong id="humidity"></strong>,
+            Wind: <strong id="wind-speed"></strong>
+          </p>
+        </div>
 
+        <div class="weathe-app-temperature-container">
+          <div class="weather-app-icon" id="icon">🌤</div>
+          <div class="weather-app-temperature" id="temperature"></div>
+          <div class="weather-app-unit">°C</div>
+        </div>
+      </div>
     </main>
-    <div class="weather-app-data">
-    <div>
-    <h1 class="weather-app-city" id="city"></h1>
-    <p class="weather-app-detail">Sunday 15:27, <span id="description"></span><br/>
-Humidity: <strong> 47%></strong>, Wind: <strong>4.12km/h</strong></p>
-</div>
-<div  class="weathe-app-temperature-container">
-<div class="weather-app-icon">🌤</div> <div class="weather-app-temperature" id="temperature"></div>  <div class="weather-app-unit">°C</div></div>
-</div>
 
- <Footer>This project was coded by <a href="https://github.com/DNyl01" target="_blank">Dara Lucunga</a> atracked on <a href="https://github.com/DNyl01/meteo" target="_blank"> Github </a> an hosted on <a href="https://meteoappdara.netlify.app/" target="_blank"> Netfly </a> </Footer>   
-</div>
-<script src="index.js"></script>
+    <footer>
+      This project was coded by 
+      <a href="https://github.com/DNyl01" target="_blank">Dara Lucunga</a> 
+      tracked on 
+      <a href="https://github.com/DNyl01/meteo" target="_blank">Github</a> 
+      and hosted on 
+      <a href="https://meteoappdara.netlify.app/" target="_blank">Netfly</a>
+    </footer>
+  </div>
+
+  <script src="index.js"></script>
 </body>
 </html>
